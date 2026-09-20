@@ -208,11 +208,300 @@ input {
   line-height: 1.6;
 }
 
+/* ---------- 纹样临摹借调闭环 ---------- */
+
+.chips button.chip-active,
+.chips .chip-active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+.badge {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.badge-available {
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, #ffffff);
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, #ffffff);
+}
+
+.badge-lent {
+  color: var(--secondary);
+  background: color-mix(in srgb, var(--secondary) 12%, #ffffff);
+  border: 1px solid color-mix(in srgb, var(--secondary) 35%, #ffffff);
+}
+
+.badge-scheduled {
+  color: #1d4ed8;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+}
+
+.badge-review {
+  color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 10%, #ffffff);
+  border: 1px solid color-mix(in srgb, var(--primary) 32%, #ffffff);
+}
+
+.loan-panel .heading {
+  align-items: start;
+}
+
+.studio-registry {
+  display: grid;
+  gap: 8px;
+  justify-items: end;
+  text-align: right;
+}
+
+.studio-registry small {
+  color: #64748b;
+}
+
+.studio-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 12px;
+  border: 1px dashed color-mix(in srgb, var(--accent) 45%, var(--border));
+  border-radius: 7px;
+  background: color-mix(in srgb, var(--accent) 7%, #ffffff);
+  color: #115e59;
+  font-size: 13px;
+}
+
+.loan-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.loan-form {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fbfdff;
+}
+
+.loan-form h3 {
+  margin: 0;
+}
+
+.loan-form select {
+  width: 100%;
+  min-height: 42px;
+  border-radius: 7px;
+  border: 1px solid var(--border);
+  padding: 0 12px;
+  background: #ffffff;
+  font: inherit;
+}
+
+.date-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.loan-msg {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 7px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.loan-msg.ok {
+  color: #115e59;
+  background: color-mix(in srgb, var(--accent) 10%, #ffffff);
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, #ffffff);
+}
+
+.loan-msg.err {
+  color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 8%, #ffffff);
+  border: 1px solid color-mix(in srgb, var(--primary) 28%, #ffffff);
+}
+
+.sample-board {
+  display: grid;
+  gap: 14px;
+}
+
+.sample-card {
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fbfdff;
+  display: grid;
+  gap: 12px;
+}
+
+.sample-card > header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.sample-card h3 {
+  margin: 0 0 6px;
+}
+
+.sample-card header p {
+  margin: 0;
+  color: #526071;
+  line-height: 1.6;
+}
+
+.sample-tip {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.loan-row {
+  display: grid;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid color-mix(in srgb, var(--secondary) 25%, var(--border));
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--secondary) 5%, #ffffff);
+}
+
+.loan-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  align-items: baseline;
+}
+
+.loan-info span {
+  color: #526071;
+  font-size: 13px;
+}
+
+.loan-row > button {
+  justify-self: start;
+  padding: 0 14px;
+}
+
+.return-form {
+  display: grid;
+  gap: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border);
+}
+
+.touchup-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 8px;
+}
+
+.touchup-row input {
+  min-height: 38px;
+}
+
+.return-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.return-actions button {
+  padding: 0 14px;
+}
+
+.return-hint {
+  color: #64748b;
+}
+
+.review-box {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid color-mix(in srgb, var(--primary) 30%, var(--border));
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--primary) 6%, #ffffff);
+}
+
+.review-box p {
+  margin: 0;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.review-box ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #526071;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.review-box button {
+  justify-self: start;
+  padding: 0 14px;
+}
+
+.loan-history {
+  border-top: 1px dashed var(--border);
+  padding-top: 10px;
+  display: grid;
+  gap: 4px;
+}
+
+.loan-history p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.empty-tip {
+  margin: 0;
+  padding: 18px;
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  color: #64748b;
+  text-align: center;
+}
+
+.records h3 .badge {
+  font-size: 11px;
+  padding: 2px 8px;
+}
+
 @media (max-width: 860px) {
   .metrics,
   .workspace,
-  .field-grid {
+  .field-grid,
+  .loan-grid,
+  .date-row {
     grid-template-columns: 1fr;
+  }
+
+  .touchup-row {
+    grid-template-columns: 1fr;
+  }
+
+  .studio-registry {
+    justify-items: start;
+    text-align: left;
   }
 
   .hero {
